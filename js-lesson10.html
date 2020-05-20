@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      #controls {
+        display: flex;
+      }
+
+      .text {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        margin: 10px;
+        background-color: rgb(101, 125, 158);
+        border: 1px solid rgb(35, 88, 158);
+        border-radius: 2px;
+        width: 100px;
+        height: 40px;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: rgb(123, 172, 241);
+      }
+
+      .counter {
+        font-size: 20px;
+        width: 60px;
+      }
+
+      .labeled-counter {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+        border: 1px solid grey;
+      }
+
+      .labeled-counter__counter {
+        color: rgb(241, 28, 9);
+      }
+
+
+      .labeled-counter__button {
+        font-size: 30px;
+        width: 40px;
+        background-color: rgb(48, 133, 83);
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+
+        padding: 8px;
+        width: 200px;
+        height: 400px;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+
+      .list-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 30px;
+        width: 100%;
+        margin: 1px 0;
+        padding: 0 8px;
+        border: 1px solid rgb(39, 87, 63);
+        box-sizing: border-box;
+        cursor: pointer;
+
+        transition: background-color .3s ease-in-out;
+      }
+
+      .list-item--checked {
+        background-color: rgb(70, 221, 146);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="controls"></div>
+      <div id="app"></div>
+      <div id="list-container"></div>
+    </main>
+    <script src="./js-lesson10.js"></script>
+    <script src="./js-lesson10-task.js"></script>
+  </body>
+</html>
